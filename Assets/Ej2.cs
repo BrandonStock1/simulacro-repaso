@@ -13,14 +13,19 @@ public class Ej2 : MonoBehaviour
     void Start()
     {
         int suma;
+        int resto;
         suma = (prod1 + prod2 + prod3);
         if (monto > suma)
         {
             Debug.Log("El monto supera la suma de los tres productos");
+            resto = (monto - suma);
+            Debug.Log("Lo que sobra es " + resto);
         }
         else
         {
             Debug.Log("El monto es menor a la suma de los tres productos");
+            resto = (suma - monto);
+            Debug.Log("Lo que falta es " + resto);
         }
     }
 
